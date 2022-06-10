@@ -1,0 +1,72 @@
+Definitions
+  Real G;
+  Real pi;
+  Real convP;
+  Real convm2;
+  Real convm1;
+  Real convD;
+  Real relerr;
+End.
+Functions
+End.
+ProgramVariables
+  Real m1;
+  Real m2;
+  Real d;
+  Real m1N;
+  Real m2N;
+  Real dN;
+  Real PN;
+  Real P;
+  Real d1;
+  Real d2;
+  Real w;
+  Real Fg;
+  Real Fc;
+End.
+Problem
+	(
+		(
+		  m1>0 & m2>0 & P>0 & d2>0 & d1>0 & m1N>0 & m2N>0 & PN>0
+		  & G = (6.674 * 10^(-11)) & pi = (3.14)
+		  & ( m1 * d1 = m2 * d2 ) 
+		  & ( d = d1 + d2 )  
+		  & ( Fg = (G * m1 * m2) / d^2 ) 
+		  & ( Fc =  m2 * d2 * w^2 )
+		  & ( Fg =  Fc )
+		  & ( P = (2 * pi )/w )
+		  & convP = (1000 * 24 * 60 * 60 )
+		  & convm1 = (1.9885 * 10^30  )
+		  & convm2 = (1.898 * 10^27)
+		  & convD = (1.496 * 10^11)
+		  & m1N = m1 / convm1
+		  & m2N = m2 / convm2
+		  & dN = d / convD
+		  & PN = P / convP
+		  & relerr = 0.984375
+		)
+	->
+		(
+		     ( (m1N=1 & m2N=0.0002 & dN=0.3871 ) -> ( abs( ( ((0.1327 * (dN^3)) / m1N)^(1/2) ) - PN ) / PN < relerr ) ) 
+		  &  ( (m1N=1 & m2N=0.0025 & dN=0.7233 ) -> ( abs( ( ((0.1327 * (dN^3)) / m1N)^(1/2) ) - PN ) / PN < relerr ) ) 
+		  &  ( (m1N=1 & m2N=0.0031 & dN=1 ) -> ( abs( ( ((0.1327 * (dN^3)) / m1N)^(1/2) ) - PN ) / PN < relerr ) ) 
+		  &  ( (m1N=1 & m2N=0.0003 & dN=1.5237 ) -> ( abs( ( ((0.1327 * (dN^3)) / m1N)^(1/2) ) - PN ) / PN < relerr ) ) 
+		  &  ( (m1N=1 & m2N=1 & dN=5.2044 ) -> ( abs( ( ((0.1327 * (dN^3)) / m1N)^(1/2) ) - PN ) / PN < relerr ) ) 
+		  &  ( (m1N=1 & m2N=0.295 & dN=9.5826 ) -> ( abs( ( ((0.1327 * (dN^3)) / m1N)^(1/2) ) - PN ) / PN < relerr ) ) 
+		  &  ( (m1N=1 & m2N=0.0451 & dN=19.2184 ) -> ( abs( ( ((0.1327 * (dN^3)) / m1N)^(1/2) ) - PN ) / PN < relerr ) ) 
+		  &  ( (m1N=1 & m2N=0.0532 & dN=30.07 ) -> ( abs( ( ((0.1327 * (dN^3)) / m1N)^(1/2) ) - PN ) / PN < relerr ) ) 
+		  &  ( (m1N=0.33 & m2N=0.018 & dN=0.0505 ) -> ( abs( ( ((0.1327 * (dN^3)) / m1N)^(1/2) ) - PN ) / PN < relerr ) ) 
+		  &  ( (m1N=0.33 & m2N=0.012 & dN=0.125 ) -> ( abs( ( ((0.1327 * (dN^3)) / m1N)^(1/2) ) - PN ) / PN < relerr ) ) 
+		  &  ( (m1N=0.33 & m2N=0.008 & dN=0.213 ) -> ( abs( ( ((0.1327 * (dN^3)) / m1N)^(1/2) ) - PN ) / PN < relerr ) ) 
+		  &  ( (m1N=0.33 & m2N=0.008 & dN=0.156 ) -> ( abs( ( ((0.1327 * (dN^3)) / m1N)^(1/2) ) - PN ) / PN < relerr ) ) 
+		  &  ( (m1N=0.33 & m2N=0.014 & dN=0.549 ) -> ( abs( ( ((0.1327 * (dN^3)) / m1N)^(1/2) ) - PN ) / PN < relerr ) ) 
+		  &  ( (m1N=0.08 & m2N=0.0027 & dN=0.0111 ) -> ( abs( ( ((0.1327 * (dN^3)) / m1N)^(1/2) ) - PN ) / PN < relerr ) ) 
+		  &  ( (m1N=0.08 & m2N=0.0043 & dN=0.0152 ) -> ( abs( ( ((0.1327 * (dN^3)) / m1N)^(1/2) ) - PN ) / PN < relerr ) ) 
+		  &  ( (m1N=0.08 & m2N=0.0013 & dN=0.0214 ) -> ( abs( ( ((0.1327 * (dN^3)) / m1N)^(1/2) ) - PN ) / PN < relerr ) ) 
+		  &  ( (m1N=0.08 & m2N=0.002 & dN=0.0282 ) -> ( abs( ( ((0.1327 * (dN^3)) / m1N)^(1/2) ) - PN ) / PN < relerr ) ) 
+		  &  ( (m1N=0.08 & m2N=0.0021 & dN=0.0371 ) -> ( abs( ( ((0.1327 * (dN^3)) / m1N)^(1/2) ) - PN ) / PN < relerr ) ) 
+		  &  ( (m1N=0.08 & m2N=0.0042 & dN=0.0451 ) -> ( abs( ( ((0.1327 * (dN^3)) / m1N)^(1/2) ) - PN ) / PN < relerr ) ) 
+		  &  ( (m1N=0.08 & m2N=0.086 & dN=0.063 ) -> ( abs( ( ((0.1327 * (dN^3)) / m1N)^(1/2) ) - PN ) / PN < relerr ) ) 
+		)
+	)
+End.

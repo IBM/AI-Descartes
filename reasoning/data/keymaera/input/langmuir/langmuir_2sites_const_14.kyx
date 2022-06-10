@@ -1,0 +1,32 @@
+Definitions
+  Real kads_1;
+  Real kdes_1;
+  Real S0_1;
+  Real kads_2;
+  Real kdes_2;
+  Real S0_2;
+End.
+ProgramVariables
+End.
+Problem
+( 
+    \exists c1 \exists c2 \exists c3 \exists c4 \exists c5
+   \forall Q \forall S_1 \forall S_2 \forall Sa_1 \forall Sa_2 \forall P \forall rdes_1 \forall rads_1 \forall rdes_2 \forall rads_2 (
+    ( S0_1>0 &  S_1>0 & Sa_1>0 & rads_1>0 & rdes_1>0 & kads_1>0 & kdes_1>0 
+      & S0_2>0 &  S_2>0 & Sa_2>0 & rads_2>0 & rdes_2>0 & kads_2>0 & kdes_2>0
+      & Q>=0 & P>0 
+      & S0_1 = S_1 + Sa_1
+      & rads_1 = kads_1 * P * S_1
+      & rdes_1 = kdes_1 * Sa_1
+      & rads_1 = rdes_1
+      & S0_2  = S_2  + Sa_2 
+      & rads_2  = kads_2  * P * S_2 
+      & rdes_2  = kdes_2 * Sa_2 
+      & rads_2  = rdes_2 
+      & Q = Sa_1 + Sa_2 
+      )
+          -> 
+         (  c1>0 & c2>0 & c3>0 & c4>0 & c5>0 & Q = (c1*P^2+c2*P)/(c3*P^2+c4*P+c5))
+      )
+)
+End.

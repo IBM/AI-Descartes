@@ -1,0 +1,8 @@
+Formula: (( 0.03765 * dN^3 ) + dN^2 )/( 2.0 + dN )
+	- Results interval: 0.2757568359375 precision: 6.103515625e-05
+	- Results dependencies: { m1N: True m2N: True dN: True }
+	- Results pointwiseL2: 0.3095134779205563 precision: 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05 .
+	- Results pointwiseLinf: 0.2757568359375 precision: 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05 .
+	- Results derivation: not_proved
+	- Results derivation: not_proved
+

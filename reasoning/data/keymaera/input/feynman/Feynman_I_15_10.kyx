@@ -1,0 +1,18 @@
+Definitions
+  Real c;
+End.
+Functions
+End.
+ProgramVariables
+  Real m0;
+  Real m;
+  Real v;
+  Real p;
+End.
+Problem.
+(m>0 & m0>0 & c=2.99*10^8
+& p = m * v
+& m = m0 / (1 - v*v/c*c)^(1/2) )
+-> 
+p = m0 * v / (1 - v*v/c*c)^(1/2) 
+End.

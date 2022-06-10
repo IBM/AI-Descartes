@@ -1,0 +1,20 @@
+inputSampleSize: 50
+
+max_num_jobs: 45
+
+multitask: false
+
+baron_exec: path_to_baron_executable/baron
+LicName: path_to_baron_license_file/baronlice.txt
+
+baronOpts:
+  - "MaxTime: 60;"
+  - "PrTimeFreq: 1;"
+  - "EpsA: 1e-4;"
+  - "EpsR: 1e-3;"
+
+nonconst_plusminus: false
+
+kill_existing_baron_jobs: true
+
+printBaronFilesUpfront: true

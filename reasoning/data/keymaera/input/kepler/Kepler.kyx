@@ -1,0 +1,30 @@
+Definitions
+  Real G;
+  Real pi;
+End.
+Functions
+End.
+ProgramVariables
+  Real m1;
+  Real m2;
+  Real P;
+  Real d;
+  Real d1;
+  Real d2;
+  Real w;
+  Real Fg;
+  Real Fc;
+End.
+Problem
+(
+  (m1>0 & m2>0 & P>0 & d2>0 & d1>0 & d>0 & pi = 3.14 & G=6.67408 * 10^(-11)
+    & m1 * d1 = m2 * d2 
+    & d = d1 + d2 
+    & Fg = (G * m1 * m2) / d^2 
+    & Fc =  m2 * d2 * w^2 
+    & Fg =  Fc 
+    & P = (2 * pi )/w 
+  )
+  -> ( P^2 / d^3 = (4 * (pi^2)) /(G * (m1 + m2)) )
+)
+End.

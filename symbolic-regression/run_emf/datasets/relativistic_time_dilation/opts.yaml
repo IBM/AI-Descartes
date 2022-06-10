@@ -1,0 +1,13 @@
+
+
+#max_var_exp: 1
+#neg_exps: false
+#mms_hack: true
+#discard_redundant_exprs: false
+#generateAllBNodes: true
+
+
+#pow_values: [0.333]
+
+max_var_exp: 2
+operators: ["*", "/", "+", "sqrt"]

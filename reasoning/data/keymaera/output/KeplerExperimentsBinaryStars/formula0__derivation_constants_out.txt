@@ -1,0 +1,41 @@
+[launcher] Restarting KeYmaera X with sufficient stack space
+/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java -Xss20M -jar /Users/cor/Desktop/GIT/symbolic-discovery-reasoning/src/keymaerax/keymaerax.jar -launch -tool mathematica -timeout 1200 -prove ../data/keymaera/input/KeplerExperimentsBinaryStars/formula0__derivation_constants.kyx -mathkernel /Applications/Mathematica.app/Contents/MacOS/MathKernel
+KeYmaera X Prover 4.8.0
+Use option -help for usage and license information
+INFO  Connecting to Math Kernel over TCPIP to true
+INFO  Connected to Mathematica v12.1 (TCPIP=true, license expires +999999999-12-31)
+Proving entries from 1 files
+Proving /Users/cor/Desktop/GIT/symbolic-discovery-reasoning/src/../data/keymaera/input/KeplerExperimentsBinaryStars/formula0__derivation_constants.kyx#<undefined> ...
+INFO  Disconnected from Mathematica
+Exception in thread "main" expected to have proved, but got false
+Provable{
+==> 1:  edu.cmu.cs.ls.keymaerax.core.Imply	Imply
+  from
+==> 1:  edu.cmu.cs.ls.keymaerax.core.False$	False$}
+	at edu.cmu.cs.ls.keymaerax.btactics.DebuggingTactics$$anon$14.result(MiscTactics.scala:187)
+	at edu.cmu.cs.ls.keymaerax.bellerophon.BuiltInTactic.execute(BellerophonSyntax.scala:352)
+	at edu.cmu.cs.ls.keymaerax.bellerophon.SequentialInterpreter.runExpr(SequentialInterpreter.scala:93)
+	at edu.cmu.cs.ls.keymaerax.bellerophon.LazySequentialInterpreter.runExpr(SequentialInterpreter.scala:603)
+	at edu.cmu.cs.ls.keymaerax.bellerophon.SequentialInterpreter.apply(SequentialInterpreter.scala:46)
+	at edu.cmu.cs.ls.keymaerax.bellerophon.SequentialInterpreter.runExpr(SequentialInterpreter.scala:119)
+	at edu.cmu.cs.ls.keymaerax.bellerophon.LazySequentialInterpreter.runExpr(SequentialInterpreter.scala:603)
+	at edu.cmu.cs.ls.keymaerax.bellerophon.SequentialInterpreter.apply(SequentialInterpreter.scala:46)
+	at edu.cmu.cs.ls.keymaerax.bellerophon.SequentialInterpreter.runExpr(SequentialInterpreter.scala:382)
+	at edu.cmu.cs.ls.keymaerax.bellerophon.LazySequentialInterpreter.runExpr(SequentialInterpreter.scala:603)
+	at edu.cmu.cs.ls.keymaerax.bellerophon.SequentialInterpreter.apply(SequentialInterpreter.scala:46)
+	at edu.cmu.cs.ls.keymaerax.bellerophon.BelleInterpreter$.apply(BelleInterpreter.scala:24)
+	at edu.cmu.cs.ls.keymaerax.btactics.TactixLibrary$.proveBy(TactixLibrary.scala:843)
+	at edu.cmu.cs.ls.keymaerax.btactics.TactixLibrary$.proveBy(TactixLibrary.scala:862)
+	at edu.cmu.cs.ls.keymaerax.launcher.KeYmaeraX$.$anonfun$prove$4(KeYmaeraX.scala:550)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:658)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1402)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:172)

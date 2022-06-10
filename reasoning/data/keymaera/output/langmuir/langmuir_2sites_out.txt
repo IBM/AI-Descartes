@@ -1,0 +1,8 @@
+[launcher] Restarting KeYmaera X with sufficient stack space
+/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java -Xss20M -jar /Users/cor/Desktop/GIT/symbolic-discovery-reasoning/src/keymaerax/keymaerax.jar -launch -tool mathematica -timeout 10 -prove ../data/keymaera/input/langmuir/langmuir_2sites.kyx -out ../data/keymaera/output/langmuir/langmuir_2sites.kyp
+KeYmaera X Prover 4.9.3
+Use option -help for usage and license information
+Proving entries from 1 files
+Proving /Users/cor/Desktop/GIT/symbolic-discovery-reasoning/src/../data/keymaera/input/langmuir/langmuir_2sites.kyx#<undefined> ...
+Done /Users/cor/Desktop/GIT/symbolic-discovery-reasoning/src/../data/keymaera/input/langmuir/langmuir_2sites.kyx#<undefined> (proved)
+PROVED <undefined>: tactic=auto,tacticsize=1,budget=10[s],duration=290[ms],qe=0[ms],steps=395

@@ -1,0 +1,14 @@
+Definitions
+  Real x;
+  Real y;
+End.
+Functions
+End.
+ProgramVariables
+End.
+Problem
+  x=1
+  & y = 1
+  ->
+  x+y = 2
+End.

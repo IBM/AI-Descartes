@@ -1,0 +1,8 @@
+KeYmaera X Prover 4.8.0
+Use option -help for usage and license information
+INFO  Connecting to Math Kernel over TCPIP to true
+INFO  Connected to Mathematica v12.1 (TCPIP=true, license expires +999999999-12-31)
+Proving entries from 1 files
+Proving /Users/cor/Desktop/GIT/scientific_discovery/src/../data/keymaera/input/kepler/Kepler_approx_solar_L2.kyx#<undefined> ...
+PROVED <undefined>: tactic=auto,tacticsize=1,budget=0[s],duration=1168[ms],qe=811[ms],steps=906
+INFO  Disconnected from Mathematica

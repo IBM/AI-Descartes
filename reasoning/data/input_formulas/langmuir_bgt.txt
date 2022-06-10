@@ -1,0 +1,5 @@
+S0 = S + Sa
+r_ads = k_ads * P * S
+r_des = k_des * Sa
+r_ads = r_des
+Q = Sa

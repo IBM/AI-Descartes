@@ -1,0 +1,17 @@
+
+use_dimensional_analysis: false
+
+add_noise_to_input: false
+
+relative_squared_error: false
+prod_exp_limit: 6
+max_num_consts: 1
+
+max_tree_depth: 3
+
+dimensionUnits: [bar, mm]
+
+dimensionVars:
+#       bar mm
+  x:   [1, 0]
+  y:   [0, 3]

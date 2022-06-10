@@ -1,0 +1,12 @@
+---------------------------------------------------------------
+iterations = 53
+timeout keymaera = 20min
+---------------------------------------------------------------
+
+Formula:(( 0.03799 * dN^3) + dN^2)/(2 + dN)
+	- Results interval: 0.27557435854541945
+	- Results dependencies: {m1N: True  m2N: True  dN: True  }
+	- Results pointwiseL2: 0.07740863564232464
+	- Results pointwiseLinf: 0.27557435854541945
+	- Results derivation: True
+

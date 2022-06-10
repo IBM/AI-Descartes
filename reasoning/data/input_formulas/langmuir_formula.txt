@@ -1,0 +1,1 @@
+Q = ((S0 * (k_ads / k_des)) * P) / (1 + ((k_ads / k_des) * P))

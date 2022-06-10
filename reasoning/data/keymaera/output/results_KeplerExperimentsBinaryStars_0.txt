@@ -1,0 +1,8 @@
+Formula: ( 1/(dN^2 * m1N^2 )) + ( 1 / (dN * m2N^2) ) - m1N^3 * m2N^2 + (( (0.4787 * dN^3)/m2N) + ( dN^2 * m2N^2 ))^(1/2)
+	- Results interval: 1.0 precision: 1.0
+	- Results dependencies: { m1N: True m2N: True dN: True }
+	- Results pointwiseL2: 0.005909703592235438 precision: 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05 .
+	- Results pointwiseLinf: 0.0050048828125 precision: 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05 .
+	- Results derivation: timeout_error
+	- Results derivation: timeout_error
+

@@ -1,0 +1,5 @@
+function	f(x)
+
+Sin[x]/x
+1/x
+2+2

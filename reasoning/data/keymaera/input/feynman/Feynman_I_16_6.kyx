@@ -1,0 +1,23 @@
+Definitions
+  Real c;
+End.
+Functions
+End.
+ProgramVariables
+  Real Vx;
+  Real Vx1;
+  Real T;
+  Real T1;
+  Real X1;
+  Real X;
+  Real U;
+End.
+Problem.
+(T>0 & X1>0 & X>0 & T1>0 & c=3*10^8
+& Vx =  X / T
+& X1  = Vx1 * T1
+& X   = (X1 + U * T1) / (1-(U^2)/(c^2))^(1/2)
+& T   = (T1 + (U * X1/(c^2))) / ((1-(U^2/c^2))^(1/2)) )
+-> 
+Vx = (U + Vx1 ) / ( 1 + ( (U * Vx1) / (c^2)))
+End.

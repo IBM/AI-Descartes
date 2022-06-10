@@ -1,0 +1,26 @@
+
+use_dimensional_analysis: false
+
+add_noise_to_input: false
+
+relative_squared_error: false
+prod_exp_limit: 6
+max_num_consts: 1
+
+
+max_tree_depth: 3
+
+dimensionUnits: [m,s,kg,T,V]
+
+dimensionVars:
+#       m  s kg  T  V
+  d:   [1, 0, 0, 0, 0] # Length
+  d1:  [1, 0, 0, 0, 0]
+
+  t:   [0, 1, 0, 0, 0] # Time
+  t1:  [0, 1, 0, 0, 0]
+  tsqr:   [0, 2, 0, 0, 0]
+
+  m:   [0, 0, 1, 0, 0] # Mass
+  m0:  [0, 0, 1, 0, 0]
+  M:   [0, 0, 1, 0, 0]

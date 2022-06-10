@@ -1,0 +1,22 @@
+Definitions
+  Real kads;
+  Real kdes;
+  Real S0;
+End.
+ProgramVariables
+End.
+Problem
+( 
+    \exists c1 \exists c2 \exists c3 \exists c4
+    \forall Q \forall S \forall Sa \forall P \forall rdes \forall rads(
+        (S0>0 & Sa>0 & S>0 & P>0 & Q>0 & kads>0 & kdes>0 & rdes>0 & rads>0 
+        & S0 = S + Sa
+        & rads = kads * P * S
+        & rdes = kdes * Sa
+        & rads = rdes
+        & Q = Sa)
+        -> 
+         (  c1>0 & c2>0 & c3>0 & c4>0 &  Q = (c1*P+c2)/(c3*P+c4))
+    )
+)
+End.

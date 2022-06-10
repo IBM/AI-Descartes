@@ -1,0 +1,5 @@
+function	f(x,y)
+
+Sin[x]/y
+1/y
+2+2

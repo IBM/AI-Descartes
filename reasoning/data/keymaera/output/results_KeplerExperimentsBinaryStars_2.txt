@@ -1,0 +1,8 @@
+Formula: (( dN^3*m1N + 1/(m1N^3 * m2N^3))^(1/2))/(m1N + 0.4201 * m2N)
+	- Results interval: 1.0 precision: 1.0
+	- Results dependencies: { m1N: True m2N: True dN: True }
+	- Results pointwiseL2: 0.011635324436233156 precision: 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05 .
+	- Results pointwiseLinf: 0.00897216796875 precision: 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05 .
+	- Results derivation: not_proved
+	- Results derivation: timeout_error
+

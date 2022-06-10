@@ -1,0 +1,1185 @@
+/Users/cor/anaconda3/bin/python3 /Users/cor/Desktop/GIT/symbolic-discovery-reasoning/src/pipeline_keymaera.py
+evaluating formula: 1/3
+	 - evaluating measure: interval
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+	 - evaluating measure: dependencies
+	 - evaluating measure: pointwiseL2
+		 > point: 1/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 2/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 3/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 4/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 5/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 6/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 7/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 8/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 9/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 10/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 11/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 12/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 13/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 14/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 15/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 16/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 17/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 18/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 19/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 20/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+	 - evaluating measure: pointwiseLinf_efficient
+	 - evaluating measure: derivation
+	 - evaluating measure: weak_derivation
+Formula:(( 0.1319 * (dN^3)) / m1N )^(1/2)
+	- Results interval:  [0.0052490234375, 'precision: 6.103515625e-05']
+	- Results dependencies:  {'m1N': True, 'm2N': True, 'dN': False}
+	- Results pointwiseL2:  [0.023102108992458775, 'precision: 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05 .']
+	- Results pointwiseLinf:  [0.0052490234375, 'precision: 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05 .']
+	- Results derivation:  not_proved
+	- Results derivation with existential constants:  not_proved
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>  Results for Formula 0 can be found at: 
+>>>  ../data/keymaera/output//results_KeplerExperimentsExoPlanets_0.txt
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+evaluating formula: 2/3
+	 - evaluating measure: interval
+		 * precision: 900.0
+		 * precision: 450.0
+exit binary search with status:  timeout_error
+	 - evaluating measure: dependencies
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula1__dependencies_m1N
+--------------------------
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula1__dependencies_m1N
+--------------------------
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula1__dependencies_m1N
+--------------------------
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula1__dependencies_m1N
+--------------------------
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula1__dependencies_m1N
+--------------------------
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula1__dependencies_m1N
+--------------------------
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula1__dependencies_m1N
+--------------------------
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula1__dependencies_m1N
+--------------------------
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula1__dependencies_m1N
+--------------------------
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula1__dependencies_m1N
+--------------------------
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula1__dependencies_m1N
+--------------------------
+	 - evaluating measure: pointwiseL2
+		 > point: 1/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 2/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 3/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 4/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 5/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 6/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 7/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 8/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 9/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 10/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 11/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 12/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 13/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 14/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 15/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 16/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 17/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 18/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 19/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 20/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+	 - evaluating measure: pointwiseLinf_efficient
+	 - evaluating measure: derivation
+	 - evaluating measure: weak_derivation
+Formula:( ( ( m1N^2 * m2N^3 )/( dN ) ) + ( 0.1319 * ( dN^3 / m1N )))^(1/2)
+	- Results interval:  [1000.0, 'precision: 450.0']
+	- Results dependencies:  {'m1N': True, 'm2N': True, 'dN': True}
+	- Results pointwiseL2:  [0.13198966494382527, 'precision: 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05 .']
+	- Results pointwiseLinf:  [0.1097412109375, 'precision: 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05 .']
+	- Results derivation:  not_proved
+	- Results derivation with existential constants:  not_proved
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>  Results for Formula 1 can be found at: 
+>>>  ../data/keymaera/output//results_KeplerExperimentsExoPlanets_1.txt
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+evaluating formula: 3/3
+	 - evaluating measure: interval
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+	 - evaluating measure: dependencies
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula2__dependencies_m2N
+--------------------------
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula2__dependencies_m2N
+--------------------------
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula2__dependencies_m2N
+--------------------------
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula2__dependencies_m2N
+--------------------------
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula2__dependencies_m2N
+--------------------------
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula2__dependencies_m2N
+--------------------------
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula2__dependencies_m2N
+--------------------------
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula2__dependencies_m2N
+--------------------------
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula2__dependencies_m2N
+--------------------------
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula2__dependencies_m2N
+--------------------------
+-------------------------->>> ERROR KEYMAERA
+--------------------------
+ERROR :unknown_error
+File :KeplerExperimentsExoPlanets/formula2__dependencies_m2N
+--------------------------
+	 - evaluating measure: pointwiseL2
+		 > point: 1/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 2/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 3/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 4/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 5/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 6/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 7/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 8/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 9/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 10/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 11/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 12/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 13/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 14/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 15/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 16/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 17/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 18/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 19/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+		 > point: 20/20
+		 * precision: 1.0
+		 * precision: 0.5
+		 * precision: 0.25
+		 * precision: 0.125
+		 * precision: 0.0625
+		 * precision: 0.03125
+		 * precision: 0.015625
+		 * precision: 0.0078125
+		 * precision: 0.00390625
+		 * precision: 0.001953125
+		 * precision: 0.0009765625
+		 * precision: 0.00048828125
+		 * precision: 0.000244140625
+		 * precision: 0.0001220703125
+exit binary search with status:  ok
+	 - evaluating measure: pointwiseLinf_efficient
+	 - evaluating measure: derivation
+	 - evaluating measure: weak_derivation
+Formula:(( ( 1.0 - ( 0.7362 * m1N )) * ( dN^3 ))/ 2.0 )^(1/2)
+	- Results interval:  [0.46856689453125, 'precision: 6.103515625e-05']
+	- Results dependencies:  {'m1N': True, 'm2N': True, 'dN': False}
+	- Results pointwiseL2:  [1.2417580488986475, 'precision: 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05 .']
+	- Results pointwiseLinf:  [0.46856689453125, 'precision: 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05 .']
+	- Results derivation:  not_proved
+	- Results derivation with existential constants:  not_proved
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>  Results for Formula 2 can be found at: 
+>>>  ../data/keymaera/output//results_KeplerExperimentsExoPlanets_2.txt
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Formula:(( 0.1319 * (dN^3)) / m1N )^(1/2)
+	- Results interval:  [0.0052490234375, 'precision: 6.103515625e-05']
+	- Results dependencies:  {'m1N': True, 'm2N': True, 'dN': False}
+	- Results pointwiseL2:  [0.023102108992458775, 'precision: 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05 .']
+	- Results pointwiseLinf:  [0.0052490234375, 'precision: 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05 .']
+	- Results derivation:  not_proved
+	- Results derivation with existential constants:  not_proved
+Formula:( ( ( m1N^2 * m2N^3 )/( dN ) ) + ( 0.1319 * ( dN^3 / m1N )))^(1/2)
+	- Results interval:  [1000.0, 'precision: 450.0']
+	- Results dependencies:  {'m1N': True, 'm2N': True, 'dN': True}
+	- Results pointwiseL2:  [0.13198966494382527, 'precision: 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05 .']
+	- Results pointwiseLinf:  [0.1097412109375, 'precision: 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05 .']
+	- Results derivation:  not_proved
+	- Results derivation with existential constants:  not_proved
+Formula:(( ( 1.0 - ( 0.7362 * m1N )) * ( dN^3 ))/ 2.0 )^(1/2)
+	- Results interval:  [0.46856689453125, 'precision: 6.103515625e-05']
+	- Results dependencies:  {'m1N': True, 'm2N': True, 'dN': False}
+	- Results pointwiseL2:  [1.2417580488986475, 'precision: 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05 .']
+	- Results pointwiseLinf:  [0.46856689453125, 'precision: 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05 .']
+	- Results derivation:  not_proved
+	- Results derivation with existential constants:  not_proved
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>  Summary results can be found at: 
+>>>  ../data/keymaera/output//results_KeplerExperimentsExoPlanets.txt
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Process finished with exit code 0

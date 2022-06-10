@@ -1,0 +1,5 @@
+f(x)==0	x->0
+And[Limit[D[f(x),x],x->0]<Infinity,Limit[D[f(x),x],x->0]>0]
+And[Limit[f(x),x->Infinity]<Infinity,Limit[f(x),x->Infinity]>0]
+Resolve[ForAll[x,Implies[x>0,f(x)>0]]]
+Resolve[ForAll[x,Implies[x>0,D[f(x),x]>=0]],Reals]

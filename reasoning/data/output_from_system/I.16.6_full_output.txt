@@ -1,0 +1,141 @@
+>>> I.16.6 <<<<
+Current relative path is: /home/austel/emf
+YAML OPTS from dir: /u/austel/emf/Feynman/I.16.6/ [[outputDir: /u/austel/emf/Feynman/I.16.6//tmp], [infile: /u/austel/emf/Feynman/I.16.6//input.dat], [, /u/austel/emf/opts-common.yaml], [, /u/austel/emf/opts-Feynmann-dims.yaml], [max_const_dim_sum: -1], [, /u/austel/emf/Feynman/I.16.6//opts.yaml]]
+YAML STRING infile: /u/austel/emf/Feynman/I.16.6//input.dat
+YAML  {infile=/u/austel/emf/Feynman/I.16.6//input.dat}
+YAML opts from string infile: /u/austel/emf/Feynman/I.16.6//input.dat: {infile=/u/austel/emf/Feynman/I.16.6//input.dat}
+YAML opts from /u/austel/emf/opts-common.yaml: infile=... max_const_dim_sum=0 multitask=false nonconst_plusminus=false baron_exec=/u/austel/bin/baron baronOpts=... kill_existing_baron_jobs=true LicName=... printBaronFilesUpfront=true 
+YAML opts from /u/austel/emf/opts-Feynmann-dims.yaml: infile=... max_const_dim_sum=0 multitask=false nonconst_plusminus=false baron_exec=/u/austel/bin/baron baronOpts=... kill_existing_baron_jobs=true LicName=... printBaronFilesUpfront=true dimensionVars=... use_dimensional_analysis=true dimensionUnits=[m, s, kg, T, V] 
+YAML STRING max_const_dim_sum: -1
+YAML  {max_const_dim_sum=-1}
+WARNING: yaml key max_const_dim_sum is being overridden in string max_const_dim_sum: -1.
+YAML opts from string max_const_dim_sum: -1: {max_const_dim_sum=-1}
+YAML opts from /u/austel/emf/Feynman/I.16.6//opts.yaml: infile=... max_const_dim_sum=-1 multitask=false nonconst_plusminus=false baron_exec=/u/austel/bin/baron baronOpts=... kill_existing_baron_jobs=true LicName=... printBaronFilesUpfront=true dimensionVars=... use_dimensional_analysis=true dimensionUnits=[m, s, kg, T, V] inputSampleSize=6 
+UNOPS [*, /, +, pow] [pow]
+ BOP  [MaxTime: 600;, PrTimeFreq: 1;, EpsA: 1e-4;, EpsR: 1e-3;]
+outputDir: /u/austel/emf/Feynman/I.16.6//tmp
+Operators: [*, /, +, pow]
+ 0: [1.6617103498768002, 1.5749395311313963, 2.1096611689571954] -> 1.672326802488255
+ 1: [4.348893628625015, 2.7692196087650736, 3.4806376645991017] -> 4.13998099068268
+ 2: [4.082795740557, 2.654948030410544, 1.6230930470956348] -> 3.3992795787069645
+ 3: [4.329118002047711, 3.3192089768311295, 1.1336094143475806] -> 3.7083019651494338
+ 4: [4.588671820626571, 2.2085871429453805, 3.2606756841186586] -> 4.0754039390027055
+ 5: [3.8178636613893278, 3.0188809754745884, 4.126457638417616] -> 3.8526849695270107
+ 6: [1.8321602029748512, 2.464595626717189, 2.0322581327644262] -> 1.804444235788975
+ 7: [4.348061267535476, 3.6306792243612866, 4.4733419620749935] -> 4.359179690793882
+ 8: [1.2608893879087986, 4.195553183440447, 4.342432358844913] -> 0.6852552445721526
+ 9: [3.036926929407531, 4.977816475269023, 3.7192676016648005] -> 2.891922674801761
+10: [2.423946352972622, 4.859638951536002, 2.0829833464869894] -> 2.549776684619288
+11: [1.0652746450427242, 1.7305573709329645, 4.353688568738279] -> 0.7964436089530254
+12: [2.0300725526375545, 3.452317697200437, 1.5931312150018573] -> 2.161196005628961
+13: [1.3342627654924781, 4.766345336516113, 3.5971508824004728] -> 0.786724665493387
+14: [4.0891758094402775, 4.96249961342911, 1.5699150143380112] -> 4.456208182949125
+15: [4.026676319974493, 2.8730596237014834, 3.061838572575943] -> 3.8474787743044216
+16: [3.495177390608768, 2.1891963457842034, 1.2044602366728867] -> 2.7911955053294344
+17: [2.9975015528316957, 4.298858458093315, 1.25312354180324] -> 3.470956588582561
+18: [4.154671850037273, 3.3057392709584494, 1.71939944512838] -> 3.7803321203113893
+19: [3.059154866823143, 4.683579392135163, 2.306808770167883] -> 3.2445819661670896
+KILLING EXISTING BARON JOBS
+Renaming and recreating outputDir /u/austel/emf/Feynman/I.16.6//tmp
+NUM TREES 60 with max depth 3
+        ArithNormTree                            Unnormalized (blank if same)            
+     0   3: P                                                                                  
+     1   7: (P+P)                                                                              
+     2  10: (P+P+P)                                                                            
+     3  10: pow((P+P))                                                                         
+     4  13: (P/(P+P))                                                                          
+     5  13: (P+P+P+P)                                                                          
+     6  13: pow((P+P+P))                                                                       
+     7  14: (P+pow((P+P)))                                                                     
+     8  15: (P*pow((P+P)))                                                                     
+     9  16: (pow((P+P))/P)                                                                     
+    10  16: (P/(P+P+P))                                                                        
+    11  16: (P/pow((P+P)))                                                                     
+    12  16: (P+P+P+P+P)                                                                        
+    13  16: pow((P/(P+P)))                                                                     
+    14  16: pow((P+P+P+P))                                                                     
+    15  17: ((P+P)/(P+P))                                                                      
+    16  17: (P+(P/(P+P)))                                                                      
+    17  17: (P+P+pow((P+P)))                                                                   
+    18  19: (pow((P+P))*(P+P))                                                                 
+    19  19: (P/(P+P+P+P))                                                                      
+    20  19: (P+P+P+P+P+P)                                                                      
+    21  20: ((P+P+P)/(P+P))                                                                    
+    22  20: (pow((P+P))/(P+P))                                                                 
+    23  20: ((P+P)/(P+P+P))                                                                    
+    24  20: ((P+P)/pow((P+P)))                                                                 
+    25  20: (P+P+(P/(P+P)))                                                                    
+    26  20: (P+P+P+pow((P+P)))                                                                 
+    27  20: pow(((P+P)/(P+P)))                                                                 
+    28  21: (P+((P+P)/(P+P)))                                                                  
+    29  21: (pow((P+P))+pow((P+P)))                                                            
+    30  22: (pow((P+P))*(P+P+P))                                                               
+    31  22: (P+P+P+P+P+P+P)                                                                    
+    32  23: ((P+P+P)/(P+P+P))                                                                  
+    33  23: ((P+P+P)/pow((P+P)))                                                               
+    34  23: ((P+P+P+P)/(P+P))                                                                  
+    35  23: (pow((P+P))/(P+P+P))                                                               
+    36  23: ((P+P)/(P+P+P+P))                                                                  
+    37  23: (P+P+P+(P/(P+P)))                                                                  
+    38  23: (P+P+P+P+pow((P+P)))                                                               
+    39  24: (P+P+((P+P)/(P+P)))                                                                
+    40  24: (pow((P+P))+(P/(P+P)))                                                             
+    41  25: ((P*pow((P+P)))/(P+P))                                                             
+    42  25: (pow((P+P))*(P+P+P+P))                                                             
+    43  25: (P/(pow((P+P))*(P+P)))                                                             
+    44  25: ((pow((P+P))*(P+P))/P)                                                             
+    45  25: (P+P+P+P+P+P+P+P)                                                                  
+    46  26: ((P+P+P)/(P+P+P+P))                                                                
+    47  26: ((P+P+P+P)/(P+P+P))                                                                
+    48  26: ((P+P+P+P)/pow((P+P)))                                                             
+    49  26: (pow((P+P))/(P+P+P+P))                                                             
+    50  26: (P+P+P+P+(P/(P+P)))                                                                
+    51  27: (P+P+P+((P+P)/(P+P)))                                                              
+    52  27: ((P/(P+P))+(P/(P+P)))                                                              
+    53  28: (pow((P+P))+((P+P)/(P+P)))                                                         
+    54  29: ((pow((P+P))*(P+P))/(P+P))                                                         
+    55  29: ((P+P)/(pow((P+P))*(P+P)))                                                         
+    56  29: ((P+P+P+P)/(P+P+P+P))                                                              
+    57  30: (P+P+P+P+((P+P)/(P+P)))                                                            
+    58  31: ((P/(P+P))+((P+P)/(P+P)))                                                          
+    59  35: (((P+P)/(P+P))+((P+P)/(P+P)))                                                      
+----------------------- 
+Sampled data:
+ 0: [1.6617103498768002, 1.5749395311313963, 2.1096611689571954] -> 1.672326802488255
+ 1: [4.348893628625015, 2.7692196087650736, 3.4806376645991017] -> 4.13998099068268
+ 2: [4.329118002047711, 3.3192089768311295, 1.1336094143475806] -> 3.7083019651494338
+ 3: [3.036926929407531, 4.977816475269023, 3.7192676016648005] -> 2.891922674801761
+ 4: [4.154671850037273, 3.3057392709584494, 1.71939944512838] -> 3.7803321203113893
+ 5: [3.059154866823143, 4.683579392135163, 2.306808770167883] -> 3.2445819661670896
+Printing all jobs upfront - ubound is 0.0
+still running: [0, 1, 2, 3, 4, 5, 6]
+   1| OPT objval by        0:P:      0.296 (      2.42) P (0.9343432243149103*c)
+   1| OPT objval by    1:(P+P):     39.186 (    269.99) (P+P) ((2.0*u))
+   REDUNDANT (P) ((2.0*u))
+   1| OPT objval by  2:(P+P+P):    142.008 (   1050.06) (P+P+P) ((2.0*u)+(v^-1*u^2))
+   REDUNDANT (P+P) ((2.0*u)+(v^-1*u^2))
+   1| OPT objval by 3:pow((P+P)):      6.864 (     36.73) pow((P+P)) (((2.0*c*u)))^0.5
+   REDUNDANT pow((P)) (((2.0*c*u)))^0.5
+   1| OPT objval by 5:(P+P+P+P):    319.006 (   2403.31) (P+P+P+P) ((2.0*u)+(2.0*v^-1*u^2))
+   REDUNDANT (P+P) ((2.0*u)+(2.0*v^-1*u^2))
+   1| OPT objval by 6:pow((P+P+P)):     19.753 (     98.18) pow((P+P+P)) (((2.0*c*u)+(c*v^-1*u^2)))^0.5
+   REDUNDANT pow((P+P)) (((2.0*c*u)+(c*v^-1*u^2)))^0.5
+(0:P has result better than lbounds of these jobs being killed:  [12:(P+P+P+P+P)])
+still running: [4, 7, 8, 9, 10, 11, 13]
+  12| OPT objval by 13:pow((P/(P+P))):      0.296 (      2.42) pow((P/(P+P))) (((1.745994526499738*c^2)/((1.0)+(1.0))))^0.5
+  16| OPT objval by 14:pow((P+P+P+P)):     36.505 (    202.85) pow((P+P+P+P)) (((2.0*c*v^-1*u^2)+(u^2)+(c*u)))^0.5
+   REDUNDANT pow((P+P+P)) (((2.0*c*v^-1*u^2)+(u^2)+(c*u)))^0.5
+  18| OPT objval by 15:((P+P)/(P+P)):      0.000 (      0.00) ((P+P)/(P+P)) (((c^2*v)+(c^2*u))/((c^2)+(v*u)))
+STOPPING, since found a good solution.
+------
+OPT CAND  15:     0.0000               (    0.0000)        ((P+P)/(P+P)) S (((c^2*v)+(c^2*u))/((c^2)+(v*u)))
+OPT CAND   0:     0.2960               (    2.4222)                    P S (0.9343432243149103*c)
+OPT CAND  13: REDUNDANT (    0.30     2.4222) pow((P/(P))) (((1.745994526499738*c^2)/((2.0))))^0.5
+OPT CAND   3: REDUNDANT (    6.86    36.7335) pow(P) ((2.0*c*u))^0.5
+OPT CAND   6:    19.7534               (   98.1754)         pow((P+P+P)) S (((2.0*c*u)+(c*v^-1*u^2)))^0.5
+OPT CAND  14:    36.5046               (  202.8513)       pow((P+P+P+P)) S (((2.0*c*v^-1*u^2)+(u^2)+(c*u)))^0.5
+OPT CAND   1: REDUNDANT (   39.19   269.9947) P (2.0*u)
+OPT CAND   2:   142.0082               ( 1050.0637)              (P+P+P) S ((2.0*u)+(v^-1*u^2))
+OPT CAND   5:   319.0060               ( 2403.3051)            (P+P+P+P) S ((2.0*u)+(2.0*v^-1*u^2))
+Wall clock runtime: 19.15 (68953152140.39 over all procs)
+finished I.16.6

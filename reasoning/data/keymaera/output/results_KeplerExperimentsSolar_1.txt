@@ -1,0 +1,8 @@
+Formula: ( 0.1316 * ( dN^3 + dN ) )^(1/2)
+	- Results interval: 1.755859375 precision: 0.00439453125
+	- Results dependencies: { m1N: True m2N: True dN: True }
+	- Results pointwiseL2: 1.938466033678744 precision: 6.866455078125e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05 .
+	- Results pointwiseLinf: 1.7532501220703125 precision: 6.866455078125e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05, 6.103515625e-05 .
+	- Results derivation: not_proved
+	- Results derivation: not_proved
+

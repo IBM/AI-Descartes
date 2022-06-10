@@ -1,0 +1,17 @@
+Functions
+End.
+ProgramVariables
+  Real R;
+  Real h;
+  Real f;
+  Real n;
+  Real s1;
+  Real s;
+End.
+Problem.
+(R>0 & n>0 & h>0 & s>0 & s1>0 & f>0
+& f   = R/(n-1)
+& (n-1)/R =  (1/s) + (n/s1))
+-> 
+f = 1/(1/s + n/s1)
+End.

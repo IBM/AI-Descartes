@@ -1,0 +1,8 @@
+KeYmaera X Prover 4.8.0
+Use option -help for usage and license information
+INFO  Connecting to Math Kernel over TCPIP to true
+INFO  Connected to Mathematica v12.1 (TCPIP=true, license expires +999999999-12-31)
+Proving entries from 1 files
+Proving /Users/cor/Desktop/GIT/scientific_discovery/src/../data/keymaera/input/feynman/Feynman_I_15_10.kyx#<undefined> ...
+PROVED <undefined>: tactic=auto,tacticsize=1,budget=0[s],duration=452[ms],qe=147[ms],steps=243
+INFO  Disconnected from Mathematica
