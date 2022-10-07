@@ -738,13 +738,13 @@ class Test(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-    file_name = "test.kyx"
-    result = call_keymaera(file_name)
-    run_kepler()
-    run_langmuir()
-    run_feynman()
-    run_kepler_solar()
-    run_kepler_exoplanets()
-    run_kepler_binarystars()
-    run_kepler_solar_counterexample()
+    #file_name = "test.kyx"
+    #result = call_keymaera(file_name)
+    #run_kepler()
+    #run_langmuir()
+    #run_feynman()
+    #run_kepler_solar()
+    #run_kepler_exoplanets()
+    #run_kepler_binarystars()
+    #run_kepler_solar_counterexample()
 
