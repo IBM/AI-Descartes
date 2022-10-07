@@ -181,7 +181,7 @@ class Test(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-    call_wolfram('Limit[1/x,x->Infinity]<Infinity', file_name='test', debug=True)
-    test1()
-    test2()
-    langmuir()
+    #call_wolfram('Limit[1/x,x->Infinity]<Infinity', file_name='test', debug=True)
+    #test1()
+    #test2()
+    #langmuir()
