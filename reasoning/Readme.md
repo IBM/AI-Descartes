@@ -9,7 +9,7 @@ There are 2 main experiments pipelines (details below):
 
 ***
 ## Setup
-* Download KeYmaeraX (4.9.3) from [here](https://keymaerax.org) and add it [here](src/keymaerax). 
+* Download KeYmaeraX (4.9.3) from [here](https://keymaerax.org) (older versions can be found [here](https://github.com/LS-Lab/KeYmaeraX-release/releases)) and add it in [src/keymaerax](src/keymaerax). 
 * Install Matematica (Version: 12)
 * Connect Matematica to KeYmaeraX, otherwise use `z3` (see KeYmaeraX website for more info)
 * install the requirements in `src/requirements.txt`
