@@ -729,7 +729,7 @@ class Test(unittest.TestCase):
         answ2 = formula.compute_output(input_dict2)
         self.assertEqual(answ1, 1)
         self.assertEqual(answ2, 12)
-        formula_keymaera = 'x * 2 + y^()1/2'
+        formula_keymaera = 'x * 2 + y^(1/2)'
         formula_python = 'x*2 + sqrt(y)'
         input_dict3 = {'x': 2, 'y': 4}
         formula = Formula(formula_keymaera, formula_python)
