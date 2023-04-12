@@ -6,6 +6,9 @@ This repository contains the code and the data used for the experiments in the p
 
 **A NEW CODE/DATA UPDATE WILL COME OUT SOON!** 
 
+<p align="center"> <img align="center" width="300" src="figures/System.gif" alt="system overview"/> </p> 
+
+
 
 ## Folders description:
 * `data`: contains the 3 datasets used in the paper (Kepler’s third law of planetary motion, Einstein’s time-dilation formula, Langmuir’s adsorption equation), the data points for 81 FSRD real-world problem and the corresponding background theories.
