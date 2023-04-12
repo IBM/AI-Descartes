@@ -6,7 +6,7 @@ This repository contains the code and the data used for the experiments in the p
 
 **A NEW CODE/DATA UPDATE WILL COME OUT SOON!** 
 
-<p align="center"> <img align="center" width="300" src="figures/System.gif" alt="system overview"/> </p> 
+<p align="center"> <img align="center" src="figures/System.gif" alt="system overview"/> </p> 
 
 
 
