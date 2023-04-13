@@ -1,5 +1,0 @@
-Limit[f(x,y),x->0]==1
-Limit[f(x,y),y->Infinity]<Infinity
-f(x,y)==2*y	x->5
-f(x,y)==x/2	y->5
-f(x,y)==0.2	x->5    y->5

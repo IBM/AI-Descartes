@@ -1,0 +1,32 @@
+Definitions
+  Real c;
+  Real a;
+  Real eps;
+End.
+Functions
+End.
+ProgramVariables
+  Real v;
+  Real dt0;
+  Real dt;
+  Real d;
+  Real L;
+  Real f0;
+  Real f;
+  Real df;
+End.
+Problem(    (d > 0 & L > 0 & v>0 & c = 3*10^8 & f0>0 & f>0 & dt0>0 & dt>0 & df>0 &
+            c = 3*10^8 & 
+            v > 37 & 
+            v < 115 &
+            dt0 = 2*d/c &
+            L^2 = d^2 + (v*dt/2)^2 &
+            dt = 2*L/c &
+            f0 = 1/dt0 &
+            f = 1/dt &
+            df = f - f0
+            )
+                ->
+                 ( df/f0*10^15 = (1-((v^2)/(c^2)))^(1/2) - 1 ) 
+    )
+End.   

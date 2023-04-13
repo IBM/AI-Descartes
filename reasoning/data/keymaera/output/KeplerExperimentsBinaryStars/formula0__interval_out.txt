@@ -1,8 +1,0 @@
-[launcher] Restarting KeYmaera X with sufficient stack space
-/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java -Xss20M -jar /Users/cor/Desktop/GIT/symbolic-discovery-reasoning/src/keymaerax/keymaerax.jar -launch -tool mathematica -timeout 1200 -prove ../data/keymaera/input/KeplerExperimentsBinaryStars/formula0__interval.kyx -out ../data/keymaera/output/KeplerExperimentsBinaryStars/formula0__interval.kyp
-KeYmaera X Prover 4.9.3
-Use option -help for usage and license information
-Proving entries from 1 files
-Proving /Users/cor/Desktop/GIT/symbolic-discovery-reasoning/src/../data/keymaera/input/KeplerExperimentsBinaryStars/formula0__interval.kyx#<undefined> ...
-Done /Users/cor/Desktop/GIT/symbolic-discovery-reasoning/src/../data/keymaera/input/KeplerExperimentsBinaryStars/formula0__interval.kyx#<undefined> (timeout)
-TIMEOUT <undefined>: tactic=auto,tacticsize=-1,budget=1200[s],duration=-1[ms],qe=-1[ms],steps=-1

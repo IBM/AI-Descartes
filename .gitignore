@@ -177,3 +177,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#keymaera
+reasoning/src/keymaerax/keymaerax.jar
+.kyp
+*/.kyp
+**/.kyp

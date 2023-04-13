@@ -1,7 +1,0 @@
-Formula:( dN^3 / ((0.9967 * m1N) + m2N))^(1/2)
-	- Results interval: 0.015625
-	- Results dependencies: {m1N: False  m2N: False  dN: False  }
-	- Results pointwiseL2: 0.03125
-	- Results pointwiseLinf: 0.015625
-	- Results derivation: False
-

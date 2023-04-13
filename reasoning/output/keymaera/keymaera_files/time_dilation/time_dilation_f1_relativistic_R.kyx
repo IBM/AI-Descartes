@@ -1,0 +1,33 @@
+Definitions
+  Real c;
+  Real a;
+  Real eps;
+End.
+Functions
+End.
+ProgramVariables
+  Real v;
+  Real dt0;
+  Real dt;
+  Real d;
+  Real L;
+  Real f0;
+  Real f;
+  Real df;
+End.
+Problem(    (d > 0 & L > 0 & 
+            eps = 0.02 &
+            c = 3*10^8 & 
+            v > 37 & 
+            v < 10^8 &
+            dt0 = 2*d/c &
+            L^2 = d^2 + (v*dt/2)^2 &
+            dt = 2*L/c &
+            f0 = 1/dt0 &
+            f = 1/dt &
+            df = f - f0
+            )
+                ->
+                 ( abs(df/f0*10^15 + 0.00563*(v^2))/(df/f0*10^15) < eps) 
+    )
+End.    
