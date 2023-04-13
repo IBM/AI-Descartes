@@ -602,18 +602,18 @@ def run_kepler_binarystars():
     #   pay attention to:
     #       - power operator: keymaera ^ ;  python **
     #       - square root operator: keymaera (expr)^(1/2) ;  python sqrt(expr)
-    formulas = [['( 1/(dN^2 * m1N^2 )) + ( 1 / (dN * m2N^2) ) - m1N^3 * m2N^2 + (( (0.4787 * dN^3)/m2N) + ( dN^2 * m2N^2 ))^(1/2)',
-                 '( 1/(dN**2 * m1N**2 )) + ( 1 / (dN * m2N**2) ) - m1N**3 * m2N**2 + sqrt(( (0.4787 * dN**3)/m2N) + ( dN**2 * m2N**2 ))'],
-                ['( (dN^3)^(1/2) + ( ( m1N^3 * m2N ) / dN^(1/2)) )/(( m1N + m2N )^(1/2)) ',
-                 '(sqrt( dN**3 ) + ( ( m1N**3 * m2N )/(sqrt(dN)) ) )/(sqrt( m1N + m2N ))'],
-                ['(( dN^3*m1N + 1/(m1N^3 * m2N^3))^(1/2))/(m1N + 0.4201 * m2N)',
-                 '(sqrt( dN**3 * m1N + 1/(m1N**3 * m2N**3)))/(m1N + 0.4201 * m2N)']]
-    #formulas = [['( dN^(-2) * m1N^(-2) ) + ( dN^(-2) * m2N^(-2) ) - ( m1N^3 * m2N^2 ) + (( 0.4787 * dN^3 * m2N^(-1) ) + ( dN^2 * m2N^2 ))^(1/2)',
-    #               '( dN^(-2) * m1N**(-2) ) + ( dN**(-2) * m2N**(-2) ) - ( m1N**3 * m2N**2 ) + sqrt(( 0.4787 * dN**3 * m2N**(-1) ) + ( dN**2 * m2N**2 ))'],
-    #            ['( dN^(3/2) + ( ( m1N^3 * m2N ) / ( ( dN )^(1/2))) )/(( m1N + m2N )^(1/2)) ',
-    #               '( sqrt( dN**3 ) + ( ( m1N**3 * m2N )/(sqrt( dN )) ) )/(sqrt( m1N + m2N ))'],
-    #            ['( dN^3 / (( 0.9967 * m1N ) + m2N ))^(1/2)',
-    #               'sqrt( dN**3 /( ( 0.9967 * m1N ) + m2N))']]
+    #formulas = [['( 1/(dN^2 * m1N^2 )) + ( 1 / (dN * m2N^2) ) - m1N^3 * m2N^2 + (( (0.4787 * dN^3)/m2N) + ( dN^2 * m2N^2 ))^(1/2)',
+    #             '( 1/(dN**2 * m1N**2 )) + ( 1 / (dN * m2N**2) ) - m1N**3 * m2N**2 + sqrt(( (0.4787 * dN**3)/m2N) + ( dN**2 * m2N**2 ))'],
+    #            ['( (dN^3)^(1/2) + ( ( m1N^3 * m2N ) / dN^(1/2)) )/(( m1N + m2N )^(1/2)) ',
+    #             '(sqrt( dN**3 ) + ( ( m1N**3 * m2N )/(sqrt(dN)) ) )/(sqrt( m1N + m2N ))'],
+    #            ['(( dN^3*m1N + 1/(m1N^3 * m2N^3))^(1/2))/(m1N + 0.4201 * m2N)',
+    #             '(sqrt( dN**3 * m1N + 1/(m1N**3 * m2N**3)))/(m1N + 0.4201 * m2N)']]
+    formulas = [['( dN^(-2) * m1N^(-2) ) + ( dN^(-2) * m2N^(-2) ) - ( m1N^3 * m2N^2 ) + (( 0.4787 * dN^3 * m2N^(-1) ) + ( dN^2 * m2N^2 ))^(1/2)',
+                   '( dN^(-2) * m1N**(-2) ) + ( dN**(-2) * m2N**(-2) ) - ( m1N**3 * m2N**2 ) + sqrt(( 0.4787 * dN**3 * m2N**(-1) ) + ( dN**2 * m2N**2 ))'],
+                ['( dN^(3/2) + ( ( m1N^3 * m2N ) / ( ( dN )^(1/2))) )/(( m1N + m2N )^(1/2)) ',
+                   '( sqrt( dN**3 ) + ( ( m1N**3 * m2N )/(sqrt( dN )) ) )/(sqrt( m1N + m2N ))'],
+                ['( dN^3 / (( 0.9967 * m1N ) + m2N ))^(1/2)',
+                   'sqrt( dN**3 /( ( 0.9967 * m1N ) + m2N))']]
     run_pipeline(variables, constants, data_points, axioms, interest_variable, formulas, PRECISION, "KeplerExperimentsBinaryStars")
 
 
