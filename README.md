@@ -4,8 +4,6 @@ This repository contains the code and the data used for the experiments in the p
 
 **Visit our website** for a general overview, references, and some introductory videos: &rarr; [AI-Descartes website](https://ai-descartes.github.io) &larr;
 
-&rarr; **WORK IN PROGRESS: A CODE UPDATE WILL COME OUT SOON!** 
-
 <p align="center"> <img align="center" src="figures/System.gif" alt="system overview"/> </p> 
 
 

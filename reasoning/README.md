@@ -167,7 +167,9 @@ To reproduce the results on these problems uncomment the 3 lines defining:
 * `path_to_theory`
 * `data_file`
 
-and the last line with the function `run_problem_derivation(problem_name, path_to_theory, data_file)`
+and execute one of the following two functions:
+* `run_problem_derivation(problem_name, path_to_theory, data_file)` to check only derivability and weak derivability (results of the paper)
+* `run_problem_full(problem_name, path_to_theory, data_file)` to run the full Reasoning module with all the reasoning metrics
 
 ### Custom problems
 
@@ -180,7 +182,9 @@ To run the reasoning module of AI-Descartes on a custom problem add the followin
   * `var_const_gt.txt` with the list of constants, variables, and variable of interest 
 * `data_file` with the path to the file with the data points
 
-and execute the last line with the function `run_problem_derivation(problem_name, path_to_theory, data_file)`
+and execute one of the following two functions:
+* `run_problem_derivation(problem_name, path_to_theory, data_file)` to check only derivability and weak derivability
+* `run_problem_full(problem_name, path_to_theory, data_file)` to run the full Reasoning module with all the reasoning metrics
 
 ***
 

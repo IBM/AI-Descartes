@@ -139,7 +139,7 @@ def run_pipeline(variables, constants, data_points, axioms, interest_variable, i
                 results['interval'] = binary_search(precision, constants, variables, interest_variable, axioms, formula, 'interval', file_name, data_points)
             elif measure == 'dependencies':
                 relerr_dependencies = {}
-                # substitute this for block with the 2 for blocks below for computing the exact value of the dependency errors
+                # substitute this "for" block with the 2 "for" blocks below for computing the exact value of the dependency errors
                 for var_data in data_points[0]:
                     if var_data != interest_variable:
                         file_name = INPUT_PATH_KEYMAERA + experiment_name + '/formula' + formula_index + '__' + measure + '_' + var_data

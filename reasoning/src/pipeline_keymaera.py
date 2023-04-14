@@ -10,10 +10,18 @@ import sys
 import shutil
 import unittest
 from math import *
-from pipeline_keymaera_3problems import Formula, convert_problem_keymaera
+from pipeline_keymaera_3problems import Formula, convert_problem_keymaera, run_pipeline
 
 
 OUTPUT_PATH = "../output/"
+INPUT_PATH_KEYMAERA = "../output/keymaera/keymaera_files/"
+SENSITIVITY_ERROR = 0.1     # 0.1
+MAGNITUDE_FACTOR = 5        # 5
+ITERATIONS = 53             # max 53 which is machine precision
+TIMEOUT = 1200              # 300=5min 600=10min 1200=20min
+TOLERANCE = 10              # 10
+PRECISION = 1e-4            # > 1e-6 which is machine precision
+MEASURES = ['interval', 'dependencies', 'pointwiseL2', 'pointwiseLinf_efficient', 'derivation', 'weak_derivation']
 
 # ------------------
 # PARAMETERS
@@ -142,19 +150,26 @@ def read_data_file(file_name):
     return data
 
 
-def read_input_files(theory_path, data_file, full=False):
+def read_input_files(theory_path, data_file):
     # read files
     interest_variable, variables, constants, gt_formula = read_var_file(theory_path + "var_const_gt.txt")
     axioms = read_formulas_file(theory_path + "axioms.txt")
     formulas2prove = read_formulas_file(theory_path + "candidates.txt")
-    if full:
-        formulas2prove_python = read_formulas_file(theory_path + "candidates_py.txt")
     data = read_data_file(data_file)
     for idx, i in enumerate(formulas2prove):
-        if full:
-            formulas2prove[idx] = Formula(i, formulas2prove_python[idx])
-        else:
-            formulas2prove[idx] = Formula(i, None)
+        formulas2prove[idx] = Formula(i, None)
+    return interest_variable, variables, constants, gt_formula, axioms, formulas2prove, data
+
+
+def read_input_files_full(theory_path, data_file):
+    # read files
+    interest_variable, variables, constants, gt_formula = read_var_file(theory_path + "var_const_gt.txt")
+    axioms = read_formulas_file(theory_path + "axioms.txt")
+    formulas2prove = read_formulas_file(theory_path + "candidates.txt")
+    formulas2prove_python = read_formulas_file(theory_path + "candidates_py.txt")
+    data = read_data_file(data_file)
+    for idx, i in enumerate(formulas2prove):
+        formulas2prove[idx] = [i, formulas2prove_python[idx]]
     return interest_variable, variables, constants, gt_formula, axioms, formulas2prove, data
 
 
@@ -181,6 +196,7 @@ def convert_input_problem_derivation(files_path, input_f,  modality, index_f=0):
 
     return file_name
 
+
 def run_problem_derivation(problem_name, path_to_theory, data_file):
     output_path = OUTPUT_PATH + problem_name + '/'
     input_f = read_input_files(path_to_theory, data_file)
@@ -195,10 +211,12 @@ def run_problem_derivation(problem_name, path_to_theory, data_file):
 
 
 def run_problem_full(problem_name, path_to_theory, data_file):
-    print('----------_>>>> run_problem_full Not implemented yet for custom formulas')
-    print('----------_>>>> there will be an update soon with this functionality')
-    print('----------_>>>> use run_problem_derivation for checking if your formula is derivable')
-
+    new_dir = f'{INPUT_PATH_KEYMAERA}{problem_name}/'
+    if os.path.exists(new_dir):
+        shutil.rmtree(new_dir)
+    os.mkdir(new_dir)
+    interest_variable, variables, constants, gt_formula, axioms, formulas2prove, data = read_input_files_full(path_to_theory, data_file)
+    run_pipeline(variables, constants, data, axioms, interest_variable, formulas2prove, PRECISION, problem_name)
 
 
 class Test(unittest.TestCase):
@@ -243,24 +261,28 @@ if __name__ == '__main__':
     # path_to_theory = '../../data/FSRD/I.27.6/'
     # data_file = '../../data/FSRD_noise/I.27.6/input.dat'
     # run_problem_derivation(problem_name, path_to_theory, data_file)
+    # run_problem_full(problem_name, path_to_theory, data_file)
 
     # FSRD I.34.8
     # problem_name = 'I_34_8'
     # path_to_theory = '../../data/FSRD/I.34.8/'
     # data_file = '../../data/FSRD_noise/I.34.8/input.dat'
     # run_problem_derivation(problem_name, path_to_theory, data_file)
+    # run_problem_full(problem_name, path_to_theory, data_file)
 
     # FSRD I.43.16
     # problem_name = 'I_43_16'
     # path_to_theory = '../../data/FSRD/I.43.16/'
     # data_file = '../../data/FSRD_noise/I.43.16/input.dat'
     # run_problem_derivation(problem_name, path_to_theory, data_file)
+    # run_problem_full(problem_name, path_to_theory, data_file)
 
     # FSRD II.10.9
     # problem_name = 'II_10_9'
     # path_to_theory = '../../data/FSRD/II.10.9/'
     # data_file = '../../data/FSRD_noise/II.10.9/input.dat'
     # run_problem_derivation(problem_name, path_to_theory, data_file)
+    # run_problem_full(problem_name, path_to_theory, data_file)
 
     # FSRD II.34.2
     # problem_name = 'II_34_2/'
@@ -274,4 +296,4 @@ if __name__ == '__main__':
     # path_to_theory = '../../data/custom_folder/'
     # data_file = '../../data/custom_folder/data_file.dat'
     # run_problem_derivation(problem_name, path_to_theory, data_file)
-    # run_problem_full(problem_name, path_to_theory, data_file) # COMING SOON for custom formulas
+    # run_problem_full(problem_name, path_to_theory, data_file)
