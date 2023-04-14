@@ -782,6 +782,7 @@ class Test(unittest.TestCase):
         answ3 = formula.compute_output(input_dict3)
         self.assertEqual(answ3, 6)
 
+
 if __name__ == '__main__':
     # TESTS for Keymaera and the connection with Mathematica
     # if not connected with Mathematica, only 2 will succeed

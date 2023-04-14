@@ -158,7 +158,7 @@ def read_input_files(theory_path, data_file, full=False):
     return interest_variable, variables, constants, gt_formula, axioms, formulas2prove, data
 
 
-def convert_input_problem(files_path, input_f,  modality, index_f=0):
+def convert_input_problem_derivation(files_path, input_f,  modality, index_f=0):
     # derivation derivation_constants interval dependencies pointwiseL2 pointwiseLinf pointwiseLinf
 
     if os.path.exists(files_path):
@@ -167,48 +167,19 @@ def convert_input_problem(files_path, input_f,  modality, index_f=0):
 
     [interest_variable, variables, constants, gt_formula, axioms, formulas2prove, data] = input_f
     file_name_list = []
+    assert modality in ['derivation', 'derivation_constants']
 
     if modality == 'derivation':
-        file_name = files_path + "keymaera_file_derivation.kyx"
-        file_name_list.append("keymaera_file_derivation.kyx")
+        file_name_full = files_path + "keymaera_file_derivation.kyx"
+        file_name = "keymaera_file_derivation"
+        convert_problem_keymaera(constants, variables, interest_variable, axioms, formulas2prove[index_f], "derivation", file_name_full, data=data, var=None, relerr=None)
 
-        convert_problem_keymaera(constants, variables, interest_variable, axioms, formulas2prove[index_f], "derivation", file_name, data=data, var=None, relerr=None)
+    else: #modality == 'derivation_constants'
+        file_name_full = files_path + "keymaera_file_derivation_constants.kyx"
+        file_name = "keymaera_file_derivation_constants"
+        convert_problem_keymaera(constants, variables, interest_variable, axioms, formulas2prove[index_f], "derivation_constants", file_name_full, data=data, var=None, relerr=None)
 
-    elif modality == 'derivation_constants':
-        file_name = files_path + "keymaera_file_derivation_constants.kyx"
-        file_name_list.append("keymaera_file_derivation_constants.kyx")
-        convert_problem_keymaera(constants, variables, interest_variable, axioms, formulas2prove[index_f], "derivation_constants", file_name, data=data, var=None, relerr=None)
-
-    elif modality == 'pointwiseLinf':
-        file_name = files_path + "keymaera_file_pointwiseLinf.kyx"
-        file_name_list.append("keymaera_file_pointwiseLinf.kyx")
-        convert_problem_keymaera(constants, variables, interest_variable, axioms, formulas2prove[index_f], "pointwiseLinf", file_name, data=data, var=None, relerr=None)
-
-    elif modality == 'interval':
-        file_name = files_path + "keymaera_file_interval.kyx"
-        file_name_list.append("keymaera_file_interval.kyx")
-        convert_problem_keymaera(constants, variables, interest_variable, axioms, formulas2prove[index_f], "interval", file_name, data=data, var=None, relerr=None)
-
-    elif modality == 'dependencies':
-        for var in data[0].keys():
-            if var != interest_variable:
-                file_name = f"{files_path}keymaera_file_dependencies_{var}.kyx"
-                file_name_list.append(f"keymaera_file_dependencies_{var}.kyx")
-                convert_problem_keymaera(constants, variables, interest_variable, axioms, formulas2prove[index_f], "dependencies", file_name, data=data, var=var, relerr=None)
-
-    elif modality == 'pointwiseL2':
-        file_name = files_path + "keymaera_file_pointwiseL2.kyx"
-        file_name_list.append("keymaera_file_pointwiseL2.kyx")
-        convert_problem_keymaera(constants, variables, interest_variable, axioms, formulas2prove[index_f], "pointwiseL2", file_name, data=data, var=None, relerr=None)
-    else:
-        raise Exception
-
-    file_name_list_tmp = []
-    for f in file_name_list:
-        ff = f.split('/')
-        file_name_list_tmp.append(ff[-1].replace('.kyx', ''))
-
-    return file_name_list_tmp
+    return file_name
 
 def run_problem_derivation(problem_name, path_to_theory, data_file):
     output_path = OUTPUT_PATH + problem_name + '/'
@@ -218,26 +189,16 @@ def run_problem_derivation(problem_name, path_to_theory, data_file):
         print(f'\nmodality: {m}')
         for i in range(len(input_f[5])):
             print(f'- formula: {str(input_f[5][i])}')
-            file_name_list = convert_input_problem(output_path, input_f, m, i)
-            for file_name in file_name_list:
-                result = call_keymaera(output_path, file_name)
-                print("Result for " + file_name + ": " + str(result))
+            file_name = convert_input_problem_derivation(output_path, input_f, m, i)
+            result = call_keymaera(output_path, file_name)
+            print("Result for " + file_name + ": " + str(result))
 
 
 def run_problem_full(problem_name, path_to_theory, data_file):
-    print('----------_>>>> run_problem_full Not tested yet')
-    output_path = OUTPUT_PATH + problem_name + '/'
-    input_f = read_input_files(path_to_theory, data_file, full=True)
-    modality = ['derivation', 'weak_derivation', 'interval', 'dependencies', 'pointwiseL2', 'pointwiseLinf_efficient']
+    print('----------_>>>> run_problem_full Not implemented yet for custom formulas')
+    print('----------_>>>> there will be an update soon with this functionality')
+    print('----------_>>>> use run_problem_derivation for checking if your formula is derivable')
 
-    for m in modality:
-        print(f'\nmodality: {m}')
-        for i in range(len(input_f[5])):
-            print(f'- formula: {str(input_f[5][i])}')
-            file_name_list = convert_input_problem(output_path, input_f, m, i)
-            for file_name in file_name_list:
-                result = call_keymaera(output_path, file_name)
-                print("Result for " + file_name + ": " + str(result))
 
 
 class Test(unittest.TestCase):
@@ -313,4 +274,4 @@ if __name__ == '__main__':
     # path_to_theory = '../../data/custom_folder/'
     # data_file = '../../data/custom_folder/data_file.dat'
     # run_problem_derivation(problem_name, path_to_theory, data_file)
-    # run_problem_full(problem_name, path_to_theory, data_file) # not tested yet
+    # run_problem_full(problem_name, path_to_theory, data_file) # COMING SOON for custom formulas
