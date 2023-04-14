@@ -1,8 +1,8 @@
 # Reasoning for Scientific Discovery
 
 There are 3 main pipelines (details below):
-- [pipeline KeYmaeraX](#pipeline-keymaerax-3-problems)
-- [pipeline KeYmaeraX 3 problems](#pipeline-keymaerax)
+- [pipeline KeYmaeraX 3 problems](#pipeline-keymaerax-3-problems)
+- [pipeline KeYmaeraX](#pipeline-keymaerax)
 - [pipeline Mathematica](#pipeline-mathematica)
 
 ***
