@@ -1,0 +1,14 @@
+# AI-Descartes correct:
+0.9993131785619503 * mu * q * Volt * d^-1
+
+# AI-Descartes incorrect:
+(( -4.356185692492171 * mu^-1 * q^-1 * Volt^-1)+( mu^-1 * q^-1)+( mu * q * Volt * d^-1))
+
+# AIFeynman incorrect:
+0.944624825550 * ( q / sin(( d / ( Volt * mu ))))
+
+# PySR incorrect:
+((((( q * mu) + 0.14453848 ) * Volt ) - 0.5977819 ) / d )
+
+# Bayesian incorrect:
+q * mu

@@ -1,0 +1,17 @@
+v>0
+Volt>0
+F>0
+E>0
+m>0
+mu>0
+q>0
+d>0
+tau>0
+
+v / tau = F/m
+
+mu = tau/m
+
+F = q * E
+
+E = Volt/d

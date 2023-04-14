@@ -1,0 +1,3 @@
+# formula ground truth
+
+(q*v*B)/p

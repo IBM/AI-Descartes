@@ -198,11 +198,11 @@ class Test(unittest.TestCase):
 
 if __name__ == '__main__':
     # TESTs for Mathematica
-    #unittest.main()
+    unittest.main()
 
-    #call_wolfram('Limit[1/x,x->Infinity]<Infinity', file_name='test', debug=True)
-    #debug1()
-    #debug2()
+    # call_wolfram('Limit[1/x,x->Infinity]<Infinity', file_name='test', debug=True)
+    # debug1()
+    # debug2()
 
     # Experiment for Langmuir with constraints K
-    langmuir()
+    # langmuir()

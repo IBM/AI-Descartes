@@ -1,0 +1,18 @@
+# interest variable
+mu
+
+
+# variables
+v
+I
+freq
+q
+r
+
+# constants
+pi
+A
+
+# formula ground truth
+
+mu =  q*v*r/2

@@ -1,0 +1,3 @@
+# formula ground truth
+
+ mu = q*v*r/2

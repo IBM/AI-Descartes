@@ -1,0 +1,17 @@
+# interest variable
+
+E
+
+# variables
+
+sigmaF
+sigmaP
+N
+P
+chi
+eps
+
+# constants
+delta
+q
+

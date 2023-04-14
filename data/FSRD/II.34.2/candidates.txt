@@ -1,0 +1,15 @@
+#II.34.2
+# AI-Descartes correct:
+0.5022206207434935 * q * v * r
+
+# AI-Descartes incorrect:
+(( q^2 * v^2 * r )/(( -0.007549568519260945 * r^2 )+( 2.0 * q * v )))
+
+# AIFeynman incorrect:
+0.500373697922 * ( r / sin((( v * q ))^( -1 )))
+
+# PySR incorrect:
+(( r * (( v * (( q * 0.5038236 ) - 0.014363476 )) + 0.11992788 )) - 0.32667777 )
+
+# Bayesian incorrect:
+(( -1.1888412559044745 * v^-1 * r^-1 )+((( q * v^2 * r )+( 1.0 ))/( 2.0 * v )))

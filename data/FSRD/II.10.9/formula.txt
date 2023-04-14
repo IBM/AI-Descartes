@@ -1,0 +1,3 @@
+# formula ground truth
+
+E = sigmaF/(eps * (1+ chi))

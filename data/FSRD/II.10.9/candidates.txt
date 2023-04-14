@@ -1,0 +1,14 @@
+# AI-Descartes correct:
+(( 0.9959918982243473 * sigmaF )/(( eps )+( eps * chi )))
+
+# AI-Descartes incorrect:
+(( sigmaF )/(( 1.0058306241517636 * eps * chi )-( eps )))
+
+# AIFeynman incorrect:
+0.348606811440 * ( sigmaF / ( eps * sqrt(( chi - 1.0 ))))
+
+# PySR incorrect:
+((( sigmaF / eps) + 0.016521687 ) / ( chi + 1.0524766 ))
+
+# Bayesian correct (changing both constants to 1):
+( sigmaF / (( 1.0132126973528854 * ( 0.9672862986658131 + chi )) * eps))

@@ -40,9 +40,11 @@ class Formula:
         self.existential_constants = []
         self.keymaera_string_constants = keymaera_string
         index = 1
+        name_map = {}
         for i in self.keymaera_string.split():
             try:
                 result = float(i)
+                name_map[result] = i
                 if result not in self.mapping:
                     self.mapping[result] = 'c' + str(index)
                     self.existential_constants.append('c' + str(index))
@@ -50,11 +52,15 @@ class Formula:
             except:
                 continue
         for i in self.mapping:
-            self.keymaera_string_constants = self.keymaera_string_constants.replace(str(i), self.mapping[i])
+            self.keymaera_string_constants = self.keymaera_string_constants.replace(name_map[i], self.mapping[i])
         pass
 
     def compute_output(self, input_data_dict):
         return eval(self.python_string, self.operators, input_data_dict)
+
+    def __str__(self):
+        return str(self.keymaera_string)
+
 
 
 def print_results(measure_vector, file_name):
@@ -116,9 +122,8 @@ def print_results(measure_vector, file_name):
 
 
 def run_pipeline(variables, constants, data_points, axioms, interest_variable, input_formulas, precision, experiment_name):
-    if os.path.exists(OUTPUT_PATH_KEYMAERA):
-        shutil.rmtree(OUTPUT_PATH_KEYMAERA)
-    os.mkdir(OUTPUT_PATH_KEYMAERA)
+    if not os.path.exists(OUTPUT_PATH_KEYMAERA):
+        os.mkdir(OUTPUT_PATH_KEYMAERA)
     formulas_list = []
     for ff in input_formulas:
         formulas_list.append(Formula(ff[0], ff[1]))
@@ -287,7 +292,7 @@ def call_keymaera(file_name, tool='mathematica'):
     return out
 
 
-def convert_problem_keymaera(constants, variables, interestvariable, axioms, formula, measure, file_name, data=None, var=None, relerr=None):
+def convert_problem_keymaera(constants, variables, interest_variable, axioms, formula, measure, file_name, data=None, var=None, relerr=None):
     '''
     :param constants: constants list
     :param variables: variables list
@@ -302,7 +307,7 @@ def convert_problem_keymaera(constants, variables, interestvariable, axioms, for
     # Constants
     formula_keymaera = ['Definitions']
     for i in constants:
-        formula_keymaera.append('  Real '+i+';')
+        formula_keymaera.append('  Real ' + i + ';')
     if measure == 'interval' or measure == 'dependencies' or measure == 'pointwiseL2' or measure == 'pointwiseLinf':
         formula_keymaera.append('  Real relerr;')
     formula_keymaera.append('End.')
@@ -312,7 +317,9 @@ def convert_problem_keymaera(constants, variables, interestvariable, axioms, for
     # Variables
     formula_keymaera.append('ProgramVariables')
     for i in variables:
-        formula_keymaera.append('  Real '+i+';')
+        if not i == interest_variable:
+            formula_keymaera.append('  Real ' + i + ';')
+    formula_keymaera.append('  Real ' + interest_variable + ';')
     formula_keymaera.append('End.')
     formula_keymaera.append('Problem')
     if measure == "derivation_constants":
@@ -320,6 +327,7 @@ def convert_problem_keymaera(constants, variables, interestvariable, axioms, for
             formula_keymaera.append(" \exists " + i)
         for variable_c in variables:
             formula_keymaera.append(" \\forall " + variable_c)
+        formula_keymaera.append(" \\forall " + interest_variable)
         formula_keymaera.append(" (")
     formula_keymaera.append('\t(')
     formula_keymaera.append('\t\t(')
@@ -331,19 +339,19 @@ def convert_problem_keymaera(constants, variables, interestvariable, axioms, for
             formula_keymaera.append('\t\t  & ' + i + '')
     if measure == 'interval' or measure == 'dependencies':
         relevant_vars = list(data[0].keys())
-        relevant_vars.remove(interestvariable)
+        relevant_vars.remove(interest_variable)
         intervals = find_intervals_data(relevant_vars, data)
         if measure == 'dependencies':
             intervals[var] = change_order_magnitude(intervals[var])
         for i in intervals:
-            if i != interestvariable:
+            if i != interest_variable:
                 value1 = str(intervals[i][0]).replace('e', '*10^')
                 value2 = str(intervals[i][1])
                 formula_keymaera.append('\t\t  & ' + i + '>=' + value1 + ' & ' + i + '<=' + value2 + '')
     if measure == 'pointwiseL2':
         stringa = '\t\t '
         for i in data[var]:
-            if i != interestvariable:
+            if i != interest_variable:
                 stringa += ' & ' + i + '=' + str(data[var][i])
         formula_keymaera.append(stringa)
     if measure == 'interval' or measure == 'dependencies' or measure == 'pointwiseL2' or measure == 'pointwiseLinf':
@@ -354,11 +362,11 @@ def convert_problem_keymaera(constants, variables, interestvariable, axioms, for
     formula_keymaera.append('\t->')
     formula_keymaera.append('\t\t(')
     if measure == 'interval':
-        formula_keymaera.append('\t\t abs( ( ' + formula.keymaera_string + ' ) - ' + interestvariable + ' ) / ' + interestvariable + ' < relerr')
+        formula_keymaera.append('\t\t abs( ( ' + formula.keymaera_string + ' ) - ' + interest_variable + ' ) / ' + interest_variable + ' < relerr')
     elif measure == 'dependencies':
-        formula_keymaera.append('\t\t abs( ( ' + formula.keymaera_string + ' ) - ' + interestvariable + ' ) / ' + interestvariable + ' < relerr')
+        formula_keymaera.append('\t\t abs( ( ' + formula.keymaera_string + ' ) - ' + interest_variable + ' ) / ' + interest_variable + ' < relerr')
     elif measure == 'pointwiseL2':
-        formula_keymaera.append('\t\t ( abs( ( ' + formula.keymaera_string + ' ) - ' + interestvariable + ' ) / ' + interestvariable + ') < relerr')
+        formula_keymaera.append('\t\t ( abs( ( ' + formula.keymaera_string + ' ) - ' + interest_variable + ' ) / ' + interest_variable + ') < relerr')
     elif measure == 'pointwiseLinf':
         not_first_line = False
         for datapoint in data:
@@ -371,20 +379,22 @@ def convert_problem_keymaera(constants, variables, interestvariable, axioms, for
             stringa += ' ( ('
             not_first_variable = False
             for i in datapoint:
-                if i != interestvariable:
+                if i != interest_variable:
                     if not_first_variable:
                         stringa += ' & '
                     else:
                         not_first_variable = True
                     stringa += i + '=' + str(datapoint[i])
             stringa += ' ) -> ('
-            stringa += ' abs( ( ' + formula.keymaera_string + ' ) - ' + interestvariable + ' ) / ' + interestvariable + ' < relerr'
+            stringa += ' abs( ( ' + formula.keymaera_string + ' ) - ' + interest_variable + ' ) / ' + interest_variable + ' < relerr'
             stringa += ' ) ) '
             formula_keymaera.append(stringa)
     elif measure == 'derivation':
-        formula_keymaera.append('\t\t\t' + interestvariable + ' = ' + formula.keymaera_string)
+        formula_keymaera.append('\t\t\t' + interest_variable + ' = ' + formula.keymaera_string)
     elif measure == "derivation_constants":
-        formula_keymaera.append('\t\t\t' + interestvariable + ' = ' + formula.keymaera_string_constants)
+        for i in formula.existential_constants:
+            formula_keymaera.append('\t\t\t' + i + ' > 0 & ')
+        formula_keymaera.append('\t\t\t' + interest_variable + ' = ' + formula.keymaera_string_constants)
     else:
         raise Exception
     formula_keymaera.append('\t\t)')
@@ -779,15 +789,15 @@ if __name__ == '__main__':
 
     # EXPERIMENTS on the 3 problems + some FSRD
 
-    #run_kepler()
-    #run_kepler_solar()
-    #run_kepler_exoplanets()
-    #run_kepler_binarystars()
-    #run_kepler_solar_counterexample()
+    # run_kepler()
+    # run_kepler_solar()
+    # run_kepler_exoplanets()
+    # run_kepler_binarystars()
+    # run_kepler_solar_counterexample()
 
-    #run_langmuir()
+    # run_langmuir()
 
-    #run_time_dilation()
+    # run_time_dilation()
 
-    #run_feynman()
+    # run_feynman()
 

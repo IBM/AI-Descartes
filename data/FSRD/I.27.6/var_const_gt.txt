@@ -1,0 +1,15 @@
+# interest variable
+foc
+
+# variables
+tvq
+top2
+n
+
+# constants
+d1
+d2
+top1
+VQ
+h
+r

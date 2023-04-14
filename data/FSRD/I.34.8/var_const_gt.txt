@@ -1,0 +1,19 @@
+# interest variable
+omega
+
+
+# variables
+v
+p
+Dangle
+Dp
+Dt
+B
+q
+
+# constants
+F
+
+# formula ground truth
+
+(q*v*B)/p

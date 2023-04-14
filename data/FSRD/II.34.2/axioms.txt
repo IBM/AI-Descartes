@@ -1,0 +1,16 @@
+mu>0
+q>0
+v>0
+r>0
+A>0
+I>0
+freq>0
+pi = 31.4
+
+A = pi * r^2
+
+mu = I * A
+
+I = q * freq
+
+freq = v/(2 * pi * r)

@@ -1,0 +1,14 @@
+# AI-Descartes correct:
+(( 0.9979213120616837 * d1^-1 * n^-2 )/(( d1^-2 * n^-2 )+( d1^-1 * d2^-1 * n^-1 )))
+
+# AI-Descartes incorrect:
+((d1)/((0.009721896668029232*d1*n^-2)+(1.0)+(d1*d2^-1*n)))
+
+# AIFeynman incorrect:
+1.197256026831 * sin(log(d2))
+
+# PySR incorrect:
+(d2 / (d2 + (n / (d1 - (0.03673146 / n)))))
+
+# Bayesian incorrect:
+((((-0.029498254935467844*d2^-1*n^-1)+(1.0)))^0.5/((d2^-1*n)+(d1^-1)))

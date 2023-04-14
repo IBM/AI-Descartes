@@ -1,0 +1,16 @@
+omega>0
+v>0
+p>0
+Dangle>0
+Dp>0
+Dt>0
+q>0
+F>0
+B>0
+
+omega = Dangle/Dt
+Dp = F * Dt
+
+F = q * v * B
+
+Dangle = Dp/p

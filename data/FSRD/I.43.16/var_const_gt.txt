@@ -1,0 +1,16 @@
+# interest variable
+
+v
+
+# variables
+Volt
+F
+E
+mu
+q
+d
+
+# constants
+m
+tau
+
