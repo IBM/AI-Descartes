@@ -225,6 +225,7 @@ def run_problem_derivation(problem_name, path_to_theory, data_file):
 
 
 def run_problem_full(problem_name, path_to_theory, data_file):
+    print('----------_>>>> run_problem_full Not tested yet')
     output_path = OUTPUT_PATH + problem_name + '/'
     input_f = read_input_files(path_to_theory, data_file, full=True)
     modality = ['derivation', 'weak_derivation', 'interval', 'dependencies', 'pointwiseL2', 'pointwiseLinf_efficient']
@@ -312,4 +313,4 @@ if __name__ == '__main__':
     # path_to_theory = '../../data/custom_folder/'
     # data_file = '../../data/custom_folder/data_file.dat'
     # run_problem_derivation(problem_name, path_to_theory, data_file)
-    # run_problem_full(problem_name, path_to_theory, data_file)
+    # run_problem_full(problem_name, path_to_theory, data_file) # not tested yet

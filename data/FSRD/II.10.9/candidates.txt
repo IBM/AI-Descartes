@@ -5,7 +5,7 @@
 (( sigmaF )/(( 1.0058306241517636 * eps * chi )-( eps )))
 
 # AIFeynman incorrect:
-0.348606811440 * ( sigmaF / ( eps * sqrt(( chi - 1.0 ))))
+0.348606811440 * ( sigmaF / ( eps * ( ( chi - 1.0 )^(1/2) )))
 
 # PySR incorrect:
 ((( sigmaF / eps) + 0.016521687 ) / ( chi + 1.0524766 ))

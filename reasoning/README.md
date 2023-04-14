@@ -159,7 +159,7 @@ Run this to check that KeYmaera is set up well in your machine and that everythi
 
 ### FSRD problems
 
-There are 6 Feynman problems: 
+There are 7 Feynman problems: 
 
 To reproduce the results on these problems uncomment the 3 lines defining:
 
