@@ -1,4 +1,8 @@
+[![DOI](https://zenodo.org/badge/484084924.svg)](https://zenodo.org/badge/latestdoi/484084924)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # AI Descartes: Combining Data and Theory for Derivable Scientific Discovery
+
 
 This repository contains the code and the data used for the experiments in the paper [Combining data and theory for derivable scientific discovery with AI-Descartes](https://rdcu.be/c9IAY).
 
