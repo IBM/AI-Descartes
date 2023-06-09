@@ -1,3 +1,4 @@
+[![GitHub tag](https://img.shields.io/github/tag/IBM/AI-Descartes.svg)](https://GitHub.com/IBM/AI-Descartes/tags/)
 [![DOI](https://zenodo.org/badge/484084924.svg)](https://zenodo.org/badge/latestdoi/484084924)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
