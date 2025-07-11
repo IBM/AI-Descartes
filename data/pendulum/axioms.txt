@@ -1,2 +1,0 @@
-p = m * v
-m = m_0/ sqrt(1 - v*v/c*c)

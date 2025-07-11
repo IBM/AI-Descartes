@@ -180,6 +180,8 @@ dmypy.json
 
 #keymaera
 reasoning/src/keymaerax/keymaerax.jar
-.kyp
-*/.kyp
-**/.kyp
+reasoning/output/
+reasoning/test_data/test_keymaera/test.kyp
+reasoning/test_data/test_keymaera/test_out.txt
+reasoning/test_data/test_keymaera/test_neg.kyp
+reasoning/test_data/test_keymaera/test_neg_out.txt
