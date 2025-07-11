@@ -1,0 +1,4 @@
+# Pendulum correct:
+(6.321329 * x3) / ( ( x1 / x2 )^-1 )
+
+# Pendulum incorrect:

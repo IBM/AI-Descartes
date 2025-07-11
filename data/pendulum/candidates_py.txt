@@ -1,0 +1,31 @@
+p = m * v
+m = m_0/ sqrt(1 - v*v/c*c)
+F = m * g
+Fd + ( F * sintheta ) = 0
+sintheta - theta = 0
+d - ( L * theta ) = 0
+( T * omega ) - ( 2 * pii ) = 0
+( Fd - ( m * ad ) = 0
+( d * ( omega^2 ) ) + ad = 0
+( Tj = j * T )
+
+m > 0
+g > 0
+L > 0
+j > 0
+F > 0
+d > 0
+Fd > 0
+pii > 0
+theta > 0
+sintheta > 0
+T > 0
+omega > 0
+Tj > 0
+
+
+rest of the variables are nonnegative
+Variables: F, m, g, d, Fd, pii, theta, sintheta, L, j, T, omega, Tj
+
+measured variables: m, g, j, L, Tj
+

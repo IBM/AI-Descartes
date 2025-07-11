@@ -304,16 +304,17 @@ def convert_problem_keymaera(constants, variables, interest_variable, axioms, fo
     :param var: variable on which perform the optimization (dependencies) or data point to consider (pointwiseL2)
     :return: return the file name and path where the keymaera instance was created
     '''
+    formula_keymaera = [f'ArchiveEntry "{file_name}"']
     # Constants
-    formula_keymaera = ['Definitions']
+    formula_keymaera.append('Definitions')
     for i in constants:
         formula_keymaera.append('  Real ' + i + ';')
     if measure == 'interval' or measure == 'dependencies' or measure == 'pointwiseL2' or measure == 'pointwiseLinf':
         formula_keymaera.append('  Real relerr;')
     formula_keymaera.append('End.')
-    # Functions
-    formula_keymaera.append('Functions')
-    formula_keymaera.append('End.')
+    # # Functions
+    # formula_keymaera.append('Functions')
+    # formula_keymaera.append('End.')
     # Variables
     formula_keymaera.append('ProgramVariables')
     for i in variables:
@@ -345,7 +346,7 @@ def convert_problem_keymaera(constants, variables, interest_variable, axioms, fo
             intervals[var] = change_order_magnitude(intervals[var])
         for i in intervals:
             if i != interest_variable:
-                value1 = str(intervals[i][0]).replace('e', '*10^')
+                value1 = str(intervals[i][0]).replace('e', '*10^').replace('+','')
                 value2 = str(intervals[i][1])
                 formula_keymaera.append('\t\t  & ' + i + '>=' + value1 + ' & ' + i + '<=' + value2 + '')
     if measure == 'pointwiseL2':
@@ -355,18 +356,23 @@ def convert_problem_keymaera(constants, variables, interest_variable, axioms, fo
                 stringa += ' & ' + i + '=' + str(data[var][i])
         formula_keymaera.append(stringa)
     if measure == 'interval' or measure == 'dependencies' or measure == 'pointwiseL2' or measure == 'pointwiseLinf':
-        rel_err_10 = str(relerr).replace('e', '*10^')
+        if "+" in str(relerr):
+            rel_err_10_0 = str(round(float(str(relerr).split('e+')[0]),2))
+            rel_err_10_1 = str(relerr).split('e+')[1].replace('+','')
+            rel_err_10 = f'{rel_err_10_0}*10^{rel_err_10_1}'
+        else:
+            rel_err_10 = str(relerr).replace('e', '*10^').replace('+','')
         formula_keymaera.append('\t\t  & relerr = ' + rel_err_10)
     # End Axioms
     formula_keymaera.append('\t\t)')
     formula_keymaera.append('\t->')
     formula_keymaera.append('\t\t(')
     if measure == 'interval':
-        formula_keymaera.append('\t\t abs( ( ' + formula.keymaera_string + ' ) - ' + interest_variable + ' ) / ' + interest_variable + ' < relerr')
+        formula_keymaera.append('\t\t ( ( ' + formula.keymaera_string + ' ) - ' + interest_variable + ' ) / ' + interest_variable + ' < relerr^2')
     elif measure == 'dependencies':
-        formula_keymaera.append('\t\t abs( ( ' + formula.keymaera_string + ' ) - ' + interest_variable + ' ) / ' + interest_variable + ' < relerr')
+        formula_keymaera.append('\t\t ( ( ' + formula.keymaera_string + ' ) - ' + interest_variable + ' ) / ' + interest_variable + ' < relerr^2')
     elif measure == 'pointwiseL2':
-        formula_keymaera.append('\t\t ( abs( ( ' + formula.keymaera_string + ' ) - ' + interest_variable + ' ) / ' + interest_variable + ') < relerr')
+        formula_keymaera.append('\t\t ( ( ( ' + formula.keymaera_string + ' ) - ' + interest_variable + ' ) / ' + interest_variable + ') < relerr^2')
     elif measure == 'pointwiseLinf':
         not_first_line = False
         for datapoint in data:
@@ -386,7 +392,7 @@ def convert_problem_keymaera(constants, variables, interest_variable, axioms, fo
                         not_first_variable = True
                     stringa += i + '=' + str(datapoint[i])
             stringa += ' ) -> ('
-            stringa += ' abs( ( ' + formula.keymaera_string + ' ) - ' + interest_variable + ' ) / ' + interest_variable + ' < relerr'
+            stringa += ' ( ( ' + formula.keymaera_string + ' ) - ' + interest_variable + ' ) / ' + interest_variable + ' < relerr^2'
             stringa += ' ) ) '
             formula_keymaera.append(stringa)
     elif measure == 'derivation':
@@ -401,6 +407,7 @@ def convert_problem_keymaera(constants, variables, interest_variable, axioms, fo
     formula_keymaera.append('\t)')
     if measure == "derivation_constants":
         formula_keymaera.append(')')
+    formula_keymaera.append('End.')
     formula_keymaera.append('End.')
     # save on file
     file = open(file_name, "w")
@@ -505,13 +512,16 @@ def run_kepler_solar():
               'dN = d / convD',
               'PN = P / convP']
     # IMPORTANT: add spaces after each term
-    #   (in particular for constant terms like (X+0.2) should be written as ( X + 0.2 )
+    #   (in particular for constant terms like (X+0.2) should be written as ( x + 0.2 )
     #   for integer constants add .0 , for example (x+1) should be written as ( x + 1.0 )
     #   formulas is a list of lists. the innermost list are a pair of [keymeara_formula, python_formula]
     #   keymeara_formula and python_formula represent the same formula in keymaera and python format respectively
     #   pay attention to:
     #       - power operator: keymaera ^ ;  python **
     #       - square root operator: keymaera (expr)^(1/2) ;  python sqrt(expr)
+    # formulas = [['( 0.1319 * dN^3 )^(1/2)', 'sqrt( 0.1319 * dN**3 )'],
+    #             ['( 0.1316 * ( dN^3 + dN ) )^(1/2)', 'sqrt( 0.1316 * ( dN**3 + dN ) )'],
+    #             ['(( 0.03765 * dN^3 ) + dN^2 )/( 2.0 + dN )', '(( 0.03765 * dN**3 ) + dN**2 )/( 2.0 + dN )']]
     formulas = [['( 0.1319 * dN^3 )^(1/2)', 'sqrt( 0.1319 * dN**3 )'],
                 ['( 0.1316 * ( dN^3 + dN ) )^(1/2)', 'sqrt( 0.1316 * ( dN**3 + dN ) )'],
                 ['(( 0.03765 * dN^3 ) + dN^2 )/( 2.0 + dN )', '(( 0.03765 * dN**3 ) + dN**2 )/( 2.0 + dN )']]
@@ -655,9 +665,9 @@ def counterexample_generator(constants, variables, interestvariable, axioms, fil
             formula_keymaera.append('  Real ' + i + ';')
         formula_keymaera.append('  Real err;')
         formula_keymaera.append('End.')
-        # Functions
-        formula_keymaera.append('Functions')
-        formula_keymaera.append('End.')
+        # # Functions
+        # formula_keymaera.append('Functions')
+        # formula_keymaera.append('End.')
         # Variables
         formula_keymaera.append('ProgramVariables')
         for i in variables:
@@ -677,7 +687,7 @@ def counterexample_generator(constants, variables, interestvariable, axioms, fil
             if i != interestvariable:
                 stringa += ' & ' + i + '=' + str(data[i])
         formula_keymaera.append(stringa)
-        rel_err_10 = str(test_value).replace('e', '*10^')
+        rel_err_10 = str(test_value).replace('e', '*10^').replace('+','')
         formula_keymaera.append('\t\t  & err = ' + rel_err_10)
         # End Axioms
         formula_keymaera.append('\t\t)')

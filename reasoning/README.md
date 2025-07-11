@@ -7,13 +7,23 @@ There are 3 main pipelines (details below):
 
 ***
 ## Setup
-* Download KeYmaeraX (4.9.3) from [here](https://keymaerax.org) (older versions can be found [here](https://github.com/LS-Lab/KeYmaeraX-release/releases)) and add it in [src/keymaerax](src/keymaerax). 
-* Install Matematica (Tested with versions: 12 and 13.2)
-* Install wolframscript (terminal command for Matematica)
-* Connect Matematica to KeYmaeraX, otherwise use `z3` (see KeYmaeraX website for more info)
+* Download KeYmaeraX (5.1.2) from [here](https://keymaerax.org) (older versions can be found [here](https://github.com/LS-Lab/KeYmaeraX-release/releases)) and add it in [reasoning/src/keymaerax](src/keymaerax) folder. 
+* Install WolframEngine from [WolframEngine website](https://www.wolfram.com/engine/)
+  * You need to register and you will obtain a free license 
+* Connect WolframEngine to KeYmaeraX. Alternatively you can use `z3` but is not as powerful and might not prove most of the conjectures (see KeYmaeraX website for more info)
+  * To connect WolframEngine to KeYmaeraX you need to start KeYmaeraX and configure the path to WolframEngine installation
+  * To start  KeYmaeraX run int he terminal `java -jar keymaerax.jar ` or double click on the KeYmaeraX.jar file
+  * This will open KeYmaeraX UI in the browser. There you can configure WolframEngine path
+  * To configure the path click on `autodetect` and this will populate the fields automatically (you can also fill them manually) 
+
+[comment]: <> (Matematica &#40;Tested with versions: 12 and 13.2&#41;)
+
+[comment]: <> (* Install wolframscript &#40;terminal command for Matematica&#41;)
+
+[comment]: <> (* Connect Matematica to KeYmaeraX, otherwise use `z3` &#40;see KeYmaeraX website for more info&#41;)
 
 Please note that the results reported in the paper are by using the pipeline with KeYmaeraX+Mathematica.
-Using KeYmaeraX+z3 in some cases produces worse results.
+Using KeYmaeraX+z3 in most cases produces worse results.
 
 ***
 ## Pipeline KeYmaeraX 3 problems
